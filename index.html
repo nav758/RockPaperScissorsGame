@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="RockPaperScissorsGame.css" />
+  </head>
+  <body>
+    <div class="rules">
+      <div class="close"></div>
+      <img src="img/Group 4.png" alt="" />
+    </div>
+    <div class="btn">
+      <div class="btn-rules"><button>RULES</button></div>
+      <div class="next"><button><a href="celebration.html">NEXT</a></button></div>
+    </div>
+    <div class="container">
+      <div class="scoreboard">
+        <div class="rps">
+          <p>ROCK</p>
+          <p>PAPER</p>
+          <p>SCISSORS</p>
+        </div>
+        <div class="score">
+          <div class="score-card">
+            <p>COMPUTER</p>
+            <p>SCORE</p>
+            <h1>0</h1>
+          </div>
+          <div class="score-card-1">
+            <p>YOUR</p>
+            <p>SCORE</p>
+            <h1>0</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="game">
+        <img class="tri" src="img/triangle.png" alt="" />
+        <div class="rock" onclick="pickchoice('rock')" rock>
+          <img class="img1" src="img/Group 2.png" alt="" />
+          <img class="img2" src="img/rock.png" alt="" />
+        </div>
+        <div class="scissor" onclick="pickchoice('scissor')">
+          <img class="img1" src="img/Group 3.png" alt="" />
+          <img class="img2" src="img/scissor.png" alt="" />
+        </div>
+        <div class="paper" onclick="pickchoice('paper')">
+          <img src="img/Group 1.png" alt="" />
+          <img class="img2" src="img/paper.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="result">
+      <div class="choise">
+        <p>YOU PICKED</p>
+        <div class="picked">
+          <img id="pickedimg" src="/img/Ellipse 7.png" />
+        </div>
+      </div>
+      <div class="win-box">
+        <div class="decision">
+          <h1>YOU WIN</h1>
+          <p>AGAINST PC</p>
+        </div>
+        <div class="newGame" onclick="restartGame()">PLAY AGAIN</div>
+      </div>
+      <div class="choise">
+        <p>PC PICKED</p>
+        <div class="handImageContainer">
+          <img id="PcPickImage" src="img/Group 1.png" />
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

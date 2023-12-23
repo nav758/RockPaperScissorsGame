@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100&family=Delius+Unicase&family=Roboto:wght@100;300;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  /* height: 100vh; */
+  /* width: 100vw; */
+  background-color: #8cc461;
+  color: white;
+  font-family: "roboto", Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.scoreboard {
+  border-radius: 15px;
+  border: 2px solid #fff;
+  display: flex;
+  gap: 10rem;
+  align-items: center;
+  padding: 10px;
+}
+
+.rps {
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.score {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.score-card {
+  height: 7rem;
+  width: 7rem;
+  border-radius: 15px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.score-card-1 {
+  height: 7rem;
+  width: 7rem;
+  border-radius: 15px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.score-card h1 {
+  color: #252525;
+  font-size: 3rem;
+  font-family: Roboto;
+}
+
+.score-card p {
+  color: #656565;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  text-align: left;
+}
+.score-card-1 h1 {
+  color: #252525;
+  font-size: 3rem;
+  font-family: Roboto;
+}
+
+.score-card-1 p {
+  color: #656565;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  text-align: left;
+}
+.game-box {
+  height: 100%;
+  width: 100%;
+}
+.game {
+  position: relative;
+  width: 30rem;
+  height: 25rem;
+  display: grid;
+  grid-template-columns: (repeat(2, 1fr));
+  grid-template-areas:
+    "rock scissor"
+    "paper paper";
+  place-items: center;
+}
+
+.tri {
+  position: absolute;
+  height: 15rem;
+  width: 20rem;
+}
+
+.tri img {
+  height: 100%;
+  width: 100%;
+}
+.game button {
+  position: relative;
+  border-radius: 50%;
+  height: 11rem;
+  width: 90px;
+}
+.rock {
+  height: 11rem;
+  width: 11rem;
+  position: relative;
+  grid-area: rock;
+}
+
+.scissor {
+  height: 11rem;
+  width: 11rem;
+  position: relative;
+  grid-area: scissor;
+}
+
+.paper {
+  height: 11rem;
+  width: 11rem;
+  position: relative;
+  grid-area: paper;
+}
+
+.paper img {
+  position: absolute;
+}
+.scissor img {
+  position: absolute;
+}
+.rock img {
+  position: absolute;
+}
+
+.img2 {
+  height: 80%;
+  width: 80%;
+  right: 20px;
+  top: 10px;
+  padding: 30px;
+}
+
+.rules {
+  transform: scaleY(0);
+  height: 20rem;
+  z-index: 1;
+  border-radius: 18px;
+  position: absolute;
+  top: 230px;
+  right: 50px;
+}
+.rules img {
+  height: 100%;
+  width: 100%;
+}
+.close {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  top: 9.5px;
+  right: 0.1px;
+}
+
+.btn {
+  position: fixed;
+  height: 40px;
+  gap: 2rem;
+  bottom: 30px;
+  right: 40px;
+  display: flex;
+  z-index: 1;
+}
+.btn-rules {
+  height: 40px;
+  width: 120px;
+  top: 620px;
+  right: 50px;
+  border: 2.5px #fff solid;
+  border-radius: 10px;
+}
+.next {
+  height: 40px;
+  width: 120px;
+  top: 620px;
+  right: 50px;
+  border: 2.5px #fff solid;
+  border-radius: 10px;
+  color: #fff;
+}
+.next {
+  display: none;
+}
+button {
+  height: 100%;
+  width: 100%;
+  background-color: #8cc461;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  border: none;
+  border-radius: 15px;
+}
+
+.open {
+  transform: scaleY(1);
+  visibility: visible;
+}
+
+.result {
+  width: 40rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.choise p {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.win-box {
+  text-align: center;
+}
+.win-box p {
+  font-size: 18px;
+  letter-spacing: 1.5px;
+}
+
+.newGame {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 15px;
+  color: #6b6b6b;
+  font-size: 12px;
+}
+
+.box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70vw;
+  height: 50vh;
+  text-align: center;
+}
+.box .img1 {
+  position: absolute;
+  top: 70%;
+  transform: translateY(-50%);
+}
+
+.box .img2 {
+  max-width: 100%;
+  display: block;
+}
+.HURRAY {
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  align-items: center;
+}
+
+.again {
+  padding: 10px;
+  margin-top: 50px;
+  width: 150px;
+  background-color: #fff;
+  border-radius: 8px;
+
+  text-align: center;
+}
+
+.again a {
+  text-decoration: none;
+  color: #6b6b6b;
+}
+.next a {
+  text-decoration: none;
+  color: #fff;
+}
